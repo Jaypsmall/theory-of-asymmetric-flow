@@ -1,3 +1,16 @@
+# Asymmetric Flow and Geometric Absorption Algorithm
+
+## Thesis Description
+This repository contains a theoretical, abstract exercise in capital flow management applied to three-variable matrices with a proportional return (3:1).
+
+## Algorithm Logic
+The system evaluates the behavior of an "elastic spring" distributed across three simultaneous fronts. Upon the occurrence of an event, the winning variable reduces its exposure to the absolute minimum, while the lagging variables geometrically double their volume to force a mathematical rebalancing in future events.
+
+## Risk Analysis
+The script functions as a laboratory tool to study capital resilience against variance and to determine the precise threshold where geometric progression exceeds the liquidity of the operator or the issuing system.
+
+---
+
 # Algoritmo de Flujo Asimétrico y Absorción Geométrica
 
 ## Descripción de la Tesis
