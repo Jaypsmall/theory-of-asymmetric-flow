@@ -9,7 +9,7 @@ class LaPekillada:
     TESIS: Con capital suficiente (10,000+) y apuesta inicial mínima (1 ficha),
     el algoritmo basado en 3 variables es matemáticamente INDESTRUCTIBLE porque:
     
-    1. Las 3 columnas cubren 24/36 números (2/3 del tablero)
+    1. Las 3 columnas cubren 36/36 números (3/3 del tablero)
     2. UNA SIEMPRE GANA cada ronda (estadísticamente inevitable)
     3. La sequía simultánea de las 3 es matemáticamente IMPOSIBLE
     4. La bola de nieve nunca explota, solo crece hacia la ganancia
