@@ -6,6 +6,8 @@
 
 **Asymmetric Flow & Geometric Absorption Algorithm**
 
+---
+
 **Author:** @Jaypsmall
 
 **Project:** theory-of-asymmetric-flow
@@ -20,31 +22,41 @@
 
 # Abstract
 
-This thesis presents the **Theory of Asymmetric Flow**, a conceptual framework for studying the dynamic redistribution of exposure across multiple independent variables.
+This thesis presents the **Theory of Asymmetric Flow**, a conceptual framework for studying dynamic systems composed of multiple interacting variables.
 
-Rather than evaluating each variable independently, the theory considers that the global behavior of the system emerges from the interaction among all variables over time.
+The theory proposes that the global behavior of a system cannot be fully described by analyzing individual variables independently. Instead, the evolution of the system emerges from the continuous interaction, redistribution, and transformation of states over time.
 
-To experimentally evaluate the proposed framework, this repository includes **La Pekillada**, the first reference implementation of the **Asymmetric Flow & Geometric Absorption Algorithm**.
+To explore this framework computationally, this repository introduces **La Pekillada**, the first reference implementation of the **Asymmetric Flow & Geometric Absorption Algorithm**.
 
-The purpose of this work is to provide a conceptual basis for computational experimentation and mathematical analysis of dynamic redistribution systems.
+The objective of this work is to establish a structured foundation for mathematical modeling, computational simulation, and future theoretical development of asymmetric redistribution systems.
 
 ---
 
 # 1. Introduction
 
-Many dynamic systems are traditionally analyzed by evaluating each variable independently.
+Many dynamic systems are traditionally analyzed by studying individual components separately.
 
-The Theory of Asymmetric Flow proposes an alternative perspective in which the collective interaction among variables becomes the primary object of study.
+The Theory of Asymmetric Flow proposes an alternative perspective where the complete system state becomes the primary object of analysis.
 
-Instead of focusing on isolated behavior, the theory studies the continuous redistribution of exposure across all variables as an integrated system.
+The framework studies how exposure, resources, or accumulated values move between interconnected variables according to defined transition rules.
+
+The main hypothesis is that collective system behavior may generate properties that are not visible when variables are evaluated independently.
 
 ---
 
 # 2. Theoretical Foundation
 
-The theoretical framework is intentionally independent of any specific implementation, application domain, initial capital, iteration limit, or execution environment.
+The Theory of Asymmetric Flow is designed as a general conceptual framework.
 
-Such constraints belong exclusively to individual algorithms and computational implementations derived from the theory.
+It remains independent from:
+
+- Specific applications.
+- Initial conditions.
+- Resource limitations.
+- Iteration limits.
+- Execution environments.
+
+These elements belong to individual implementations derived from the theoretical framework.
 
 ---
 
@@ -52,140 +64,172 @@ Such constraints belong exclusively to individual algorithms and computational i
 
 ## Principle I
 
-**Asymmetric Flow**
+# Asymmetric Flow
 
-The evolution of a dynamic system depends on the interaction among its variables rather than on isolated individual behavior.
+The evolution of a system is determined by the interaction between multiple variables rather than by isolated individual behavior.
+
+The complete state of the system must be considered when analyzing dynamic evolution.
 
 ---
 
 ## Principle II
 
-**Geometric Compensation**
+# Geometric Compensation
 
-Exposure may be redistributed through predefined progression rules following favorable and unfavorable outcomes.
+After a favorable transition, one variable may return to a minimum state while remaining variables increase according to a predefined geometric progression.
+
+This creates an asymmetric redistribution of accumulated exposure.
 
 ---
 
 ## Principle III
 
-**Dynamic Redistribution**
+# Dynamic Redistribution
 
-Exposure continuously moves among the different states of the system, generating collective dynamics that cannot always be inferred from isolated variables.
+System exposure continuously changes between different states through repeated transitions.
+
+The resulting behavior emerges from the interaction of all variables over time.
 
 ---
 
 ## Principle IV
 
-**Global Equilibrium**
+# Dynamic Global Balance
 
-The overall stability of a system should be evaluated from the perspective of the complete set of interacting variables.
+System behavior must be evaluated from the perspective of the complete structure rather than from a single variable.
+
+Global behavior represents the relationship between accumulation, reduction, and transition processes.
 
 ---
 
 # 4. Mathematical Framework
 
-The mathematical framework studies:
+The system can be represented as a dynamic state model.
 
-- Dynamic exposure
-- State transitions
-- Resource allocation
-- Progressive redistribution
-- Collective system behavior
-- Statistical variance
+A system state is defined as:
 
-Generic variables:
+\[
+S_n=(X_1,X_2,X_3,...,X_n)
+\]
 
-```text
-R = Available Resources
+Where:
 
-E = Exposure
+- \(S_n\) = System state at iteration n.
+- \(X\) = Individual variable states.
 
-V = Variance
+The evolution of the system is represented by:
 
-S = System State
+\[
+S_{n+1}=T(S_n,E_n)
+\]
 
-T = Time / Iterations
-```
+Where:
+
+- \(T\) = Transition function.
+- \(E_n\) = Event condition.
+- \(S_{n+1}\) = New system state.
+
+The framework studies:
+
+- State transitions.
+- Exposure accumulation.
+- Geometric progression.
+- Resource consumption.
+- Variance effects.
+- Long-term behavior.
 
 ---
 
 # 5. Reference Algorithm
 
-The first algorithm derived from this theoretical framework is:
+The first computational model derived from this theoretical framework is:
 
 ## Asymmetric Flow & Geometric Absorption Algorithm
 
 Reference implementation:
 
-### La Pekillada
+## La Pekillada
 
-The implementation provides a computational environment for evaluating the theoretical framework under different simulation scenarios.
+This implementation provides a controlled simulation environment where the theoretical principles can be represented and experimentally evaluated.
 
 ---
 
 # 6. Computational Simulation
 
-Simulation parameters may include:
+The simulation environment allows analysis under different conditions.
 
-- Initial resources
-- Number of iterations
-- Exposure progression rules
-- Redistribution strategy
-- Statistical distributions
+Parameters may include:
 
-These parameters belong exclusively to the implementation and are not part of the theoretical framework itself.
+- Initial resources.
+- Number of iterations.
+- Transition rules.
+- Exposure progression.
+- Statistical distributions.
+- System constraints.
+
+These parameters belong to the implementation layer and do not define the theoretical framework itself.
 
 ---
 
 # 7. Experimental Evaluation
 
-The proposed implementation can be evaluated through:
+The model can be evaluated through computational experiments.
 
-- Monte Carlo simulations
-- Long-run statistical analysis
-- Sensitivity analysis
-- Comparative models
-- Stability measurements
+Methods include:
 
-Typical metrics include:
+- Monte Carlo simulations.
+- Statistical analysis.
+- Sensitivity analysis.
+- Comparative experiments.
+- Long-term simulations.
 
-- Maximum exposure
-- Resource consumption
-- Recovery periods
-- Distribution of outcomes
-- Statistical dispersion
+Metrics include:
 
----
-
-# 8. Scope
-
-The Theory of Asymmetric Flow is intended as a conceptual and computational framework for studying dynamic redistribution systems.
-
-Specific applications may define additional assumptions and operational rules according to their domain.
+- Maximum exposure.
+- Resource consumption.
+- Recovery periods.
+- State distribution.
+- Stability measurements.
+- Variance behaviour.
 
 ---
 
-# 9. Future Work
+# 8. Scope and Limitations
 
-Potential research directions include:
+The Theory of Asymmetric Flow represents an experimental conceptual framework.
 
-- Formal mathematical proofs
-- Analytical models
-- Alternative redistribution functions
-- Continuous-state systems
-- Higher-dimensional variable spaces
-- Optimization techniques
-- Comparative theoretical analysis
+Current limitations include:
+
+- Need for additional mathematical formalization.
+- Requirement for expanded simulations.
+- Need for analytical validation.
+- Dependence on defined transition rules.
+
+The framework does not claim prediction of individual events.
+
+---
+
+# 9. Future Research
+
+Future development may include:
+
+- Formal mathematical proofs.
+- Analytical solutions.
+- Higher-dimensional systems.
+- Continuous-state models.
+- Alternative transition functions.
+- Optimization methods.
+- Comparative theoretical studies.
 
 ---
 
 # 10. Conclusion
 
-The Theory of Asymmetric Flow proposes a conceptual framework centered on the collective interaction among multiple variables rather than isolated state analysis.
+The Theory of Asymmetric Flow introduces a framework focused on the study of dynamic redistribution among interacting variables.
 
-The repository provides the first computational implementation of this framework through **La Pekillada**, allowing experimental evaluation under controlled simulation environments.
+Through **La Pekillada**, the first reference implementation of the framework, the theory can be explored through computational simulation and experimental analysis.
 
-The framework is intended as a foundation for future mathematical development, computational experimentation, and theoretical analysis.
+This work establishes a foundation for future mathematical development and investigation of asymmetric dynamic systems.
 
 ---
 
