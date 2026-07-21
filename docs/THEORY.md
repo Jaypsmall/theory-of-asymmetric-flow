@@ -52,6 +52,31 @@ Instead, it provides a conceptual framework for studying the collective behavior
 
 ---
 
+# Scope
+
+The Theory of Asymmetric Flow is intentionally independent of any specific implementation, application domain, initial capital, iteration limit, or execution environment.
+
+Such constraints belong exclusively to algorithms, simulations, and computational implementations derived from this theoretical framework.
+
+---
+
+# Applications
+
+The theory is intended to serve as a conceptual framework for studying dynamic redistribution processes in multi-variable systems.
+
+Potential applications may include, but are not limited to:
+
+- Mathematical simulation
+- Resource allocation models
+- Dynamic state systems
+- Computational research
+- Statistical analysis
+- Optimization studies
+
+Specific implementations may introduce additional assumptions according to their intended domain.
+
+---
+
 # Reference Implementation
 
 The first implementation developed under this theoretical framework is:
@@ -59,6 +84,20 @@ The first implementation developed under this theoretical framework is:
 **La Pekillada**
 
 **Asymmetric Flow & Geometric Absorption Algorithm**
+
+---
+
+# Future Development
+
+Future work may include:
+
+- Formal mathematical proofs
+- Analytical models
+- Extended mathematical notation
+- Additional redistribution strategies
+- Comparative simulation studies
+- Computational optimization
+- Higher-dimensional system analysis
 
 ---
 
