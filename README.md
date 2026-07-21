@@ -1,5 +1,10 @@
-# 🔬 La Pekillada
-## Reference Implementation of the Asymmetric Flow & Geometric Absorption Algorithm
+# 🔬 Theory of Asymmetric Flow
+
+## Reference Implementation
+
+### La Pekillada
+
+**Asymmetric Flow & Geometric Absorption Algorithm**
 
 ---
 
