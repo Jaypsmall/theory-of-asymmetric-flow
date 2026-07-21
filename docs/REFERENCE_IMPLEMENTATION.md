@@ -8,7 +8,7 @@
 
 # 1. Introduction
 
-This document describes the reference implementation of La Pekillada, the first practical implementation developed under the framework of the Theory of Asymmetric Flow.
+This document describes the reference implementation of **La Pekillada**, the first practical implementation developed under the framework of the **Theory of Asymmetric Flow**.
 
 The purpose of this implementation is to provide a reproducible structure where the theoretical concepts of asymmetric distribution, directional flow, and geometric absorption can be represented, tested, and analyzed.
 
